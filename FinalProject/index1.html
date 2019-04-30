@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Aghan Tea</title>
+<meta charset="utf-8">
+<link href="Afghan.css" rel="stylesheet">
+<meta name="description" content="Naeyl  resonable price">
+
+
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/jquery-ui.min.js"></script>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+
+</script>
+
+
+
+<style>
+
+
+.tab {
+    overflow: hidden;
+    border: 2px solid green;
+    background-color: #f1f1f1;
+	
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+ 
+
+</style>
+
+
+</head>
+<div id="wrapper">
+
+<body>
+
+
+
+<header><h1> Afghan Tea</h1></header>
+<nav>
+
+	<a href="index1.html">Home </a> <br><br>
+	
+	<a href="AboutUs.html">About Us </a> <br><br>
+	
+	<a href="BlackTea.html">Black Tea</a><br><br>
+	
+	<a href="GreenTea.html">Green Tea</a> <br><br>
+	
+	<a href="SheerChai.html">Sheer Chai</a> <br><br>
+	
+	<a href="placeOrder.html">Place Order</a> <br><br>
+
+	<a href="contactUs.html">Contact Us</a> <br><br>
+	<a href="..//index.html" class="btn btn-half"> Back To Home Page</a>
+
+	
+
+
+</nav>
+
+<div id="homehero">
+</div>
+
+<main>
+
+
+
+<br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'black')">Black Tea</button>
+  <button class="tablinks" onclick="openCity(event, 'green')">Green Tea</button>
+  <button class="tablinks" onclick="openCity(event, 'sher')">Sheer Chai</button>
+</div>
+
+<div id="black" class="tabcontent">
+  <h3>Black Tea</h3>
+  <p> Our Black Tea has real tea leaves specially blended to enjoy hot or iced.</p>
+</div>
+
+<div id="green" class="tabcontent">
+  <h3>Green Tea</h3>
+  <p> Enjoy the smooth, earthy taste of matcha balanced with 
+the refreshing goodness of green tea, capturing the best of what the green leaf tea has to offer.</p> 
+</div>
+
+<div id="sher" class="tabcontent">
+  <h3>Sheer Chai</h3>
+  <p> What makes this type of tea unique is the fact that salt is used  instead of sugar.</p>
+</div>
+
+
+
+<p><span class="resort"></span> </p>
+
+
+<br>
+<br>
+  <br>
+  <br>
+
+  <div id="contact">
+  <span class="resort">Afghan Tea</span><br>
+  1234 Road<br>
+  Fredericksburg, VA 22409<br><br>
+  888-555-5555<br><br>
+  </div>
+  
+  
+  <br>
+  <br>
+
+
+  
+</main>
+<footer>
+Copyright &copy; 2018 Afghan Tea<br>
+<a href="mailto:noorullah@naeyl.com">noorullah@naeyl.com</a>
+</footer>
+
+</body>
+</div>
+
+</html>

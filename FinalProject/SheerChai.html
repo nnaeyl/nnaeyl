@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Aghan Tea</title>
+<meta charset="utf-8">
+<link href="Afghan.css" rel="stylesheet">
+<meta name="description" content="Naeyl  resonable price">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/jquery-ui.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	$('#photo').width(0).height(0).css('opacity',0);
+	$('#caption').hide();
+	$('#photo').animate(
+	   {
+		  width: '400px',
+		  height: '300px',
+		  opacity: 1
+	   },
+	   1000, 
+	   function() {
+		  $('#caption').fadeIn(1000);
+	   }
+	); // end animate
+});
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+
+<header><h1> Sheer Chai </h1></header>
+<nav>
+
+<a href="index1.html">Home </a> <br><br>
+	<a href="AboutUs.html">About Us </a> <br><br>
+	
+	<a href="BlackTea.html">Black Tea</a><br><br>
+	
+	<a href="GreenTea.html">Green Tea</a> <br><br>
+	
+	<a href="SheerChai.html">Sheer Chai</a> <br><br>
+	
+	<a href="placeOrder.html">Place Order</a> <br><br>
+
+	<a href="contactUs.html">Contact Us</a> <br><br>
+	<a href="..//index.html" class="btn btn-half"> Back To Home Page</a>
+
+	
+
+
+</nav>
+<div id="sheer">
+</div>
+
+<main>
+
+
+<div id="figure"><img src="../_images/pencils.jpg" width="400" height="300" alt="pencils" id="photo">
+<p id="caption"> Animation ...</p></div>
+
+
+
+
+  <div id="contact">
+  <span class="resort">Afghan Tea</span><br>
+  1234 Road<br>
+  Fredericksburg, VA 22409<br><br>
+  888-555-5555<br><br>
+  </div>
+</main>
+<footer>
+Copyright &copy; 2018 Afghan Tea<br>
+<a href="mailto:noorullah@naeyl.com">noorullah@naeyl.com</a>
+</footer>
+</div>
+</body>
+</html>

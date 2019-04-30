@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Aghan Tea</title>
+<meta charset="utf-8">
+<link href="Afghan.css" rel="stylesheet">
+<meta name="description" content="Naeyl  resonable price">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+button{float:right; background-color: lightblue; height: 40px; font-size:20px; border-radius: 10px;
+    width: 10%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+<div id="wrapper">
+
+<header><h1>Afghan Tea</h1></header>
+
+<div id="bank">
+</div>
+
+<main>
+
+
+<h3> Please Enter Your Bank Information:</h3>
+
+
+<div class="container">
+  <form action="/action_page.php">
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Bank: </label>
+      </div>
+	  
+	  
+	  
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Capital One</option>
+          <option value="canada">BB T</option>
+          <option value="usa">Wells Fargo</option>
+		  <option value="china">Sun Trust</option>
+          <option value="india">Credit Union</option>
+          <option value="japan">ABC</option>
+
+        </select>
+      </div>
+    </div>
+	
+	<br>
+	<div class="row">
+    <div class="row">
+      <div class="col-25">
+        <label >Account #: </label>
+      </div>
+      <div class="col-75">
+        <input type="text"  placeholder="1234 123 444..">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label>Full Name: </label>
+      </div>
+      <div class="col-75">
+        <input type="text"  placeholder=" Name on card..">
+      </div>
+    </div>
+	
+	   <div class="row">
+      <div class="col-25">
+        <label for="fname">Security #: </label>
+      </div>
+      <div class="col-75">
+        <input type="text"  placeholder="123">
+      </div>
+    </div>
+	 
+    </div>
+	
+	
+	
+	
+	
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Mailing Address:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder=" Please be Specific.." style="height:200px"></textarea>
+      </div>
+    </div>
+	
+  </form>
+  
+      <div class="row">
+      <a href="thanks.html">
+	<button> Submit</button>
+	</a>  
+	</div>
+
+</div>
+
+
+
+
+
+
+<p><span class="resort"></span> </p>
+<br> <br>
+
+  <div id="contact">
+  <span class="resort">Afghan Tea</span><br><br>
+  1234 Road<br>
+  Fredericksburg, VA 22409<br><br>
+  888-555-5555<br><br>
+  </div>
+</main>
+<footer>
+Copyright &copy; 2018 Afghan Tea<br>
+<a href="mailto:noorullah@naeyl.com">noorullah@naeyl.com</a>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Aghan Tea</title>
+<meta charset="utf-8">
+<link href="Afghan.css" rel="stylesheet">
+<meta name="description" content="Naeyl  resonable price">
+
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/jquery-ui.min.js"></script>
+<script src="airports.js"></script>
+
+<style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 10px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+</style>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+<header><h1>About Us</h1></header>
+<nav>
+
+	<a href="index1.html">Home </a> <br><br>
+	
+	<a href="AboutUs.html">About Us </a> <br><br>
+	
+	<a href="BlackTea.html">Black Tea</a><br><br>
+	
+	<a href="GreenTea.html">Green Tea</a> <br><br>
+	
+	<a href="SheerChai.html">Sheer Chai</a> <br><br>
+	
+	<a href="placeOrder.html">Place Order</a> <br><br>
+
+	<a href="contactUs.html">Contact Us</a> <br><br>
+	<a href="..//index.html" class="btn btn-half"> Back To Home Page</a>
+
+	
+
+
+</nav>
+<div id="bot">
+</div>
+
+<main>
+<br>
+<button class="accordion">Black Tea</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Green Tea</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Sheer Chai</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+<br>
+
+
+<p><span class="resort"></span> </p>
+
+
+<br>
+<br>
+
+  <div id="contact">
+  <span class="resort">Afghan Tea</span><br>
+  1234 Road<br>
+  Fredericksburg, VA 22409<br><br>
+  888-555-5555<br><br>
+  </div>
+</main>
+<footer>
+Copyright &copy; 2018 Afghan Tea<br>
+<a href="mailto:noorullah@naeyl.com">noorullah@naeyl.com</a>
+</footer>
+</div>
+</body>
+</html>

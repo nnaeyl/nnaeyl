@@ -292,7 +292,7 @@ header nav ul li a:hover
 
 .feature-area
 {
-	background-image:url(..//images/statu.JPG);
+	background-image:url(../images/statu.JPG);
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -490,7 +490,7 @@ padding-left:80px;
 
 .senf
 {
-	background-image:url(..//images/mountain.JPG);
+	background-image:url(../images/mountain.JPG);
 	background-size: cover;
 	background-position: center;
 	background-attachment:fixed;

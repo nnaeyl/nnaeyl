@@ -292,7 +292,7 @@ header nav ul li a:hover
 
 .feature-area
 {
-	background-image:url(../images/newYork.JPG);
+	background-image:url(../images/statu.jpg);
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -435,7 +435,7 @@ padding-left:80px;
 .feature-list li:hover i
 {
 	color:white;
-	background-color: #666699;
+	background-color: black;
 	transition: .5s ease;
 	-webkit-transition: .5s ease;
 	-moz-transition: .5s ease;
@@ -467,7 +467,7 @@ padding-left:80px;
 
 .feature-details h3
 {
-	color: deepskyblue;
+	color: black;
 	font-weight: 700;
 	text-transform:uppercase;
 }
@@ -475,15 +475,15 @@ padding-left:80px;
 
 .feature-details p 
 {
-	color: orange;
+	color: black;
 	font-weight: 200;
 }
 
 .more-feature-area img
 {
 	margin-left: -100px;
-	height: 800;
-	width: 800;
+	height: 600;
+	width: 600;
 }
 
 
@@ -555,7 +555,7 @@ padding-left:80px;
 	height:100px;
 	width:100px;
 	border: 5px solid black;
-	border-radius: 50%;
+	border-radius: 20%;
 	overflow: hidden;
 
 	
@@ -574,12 +574,16 @@ padding-left:80px;
 	text-align:center;
 	padding: 10px 10px 10px;
 	margin-top:-1px;
+	border-radius: 10%;
+
 }
 
 
 .team-description:hover p 
 {
-	background: deepskyblue;
+	background: #CCB8B4;
+
+
 }
 
 
